@@ -95,7 +95,8 @@ h1, h2, p {
 /* Texto debajo del banner */
 .texto {
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    color: #fff;
+    background-color: #000000;
 }
 
 /* Sección de fotos */

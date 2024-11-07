@@ -5,6 +5,7 @@
   <title>
    E.P.E.S N°101
   </title>
+  <link rel="stylesheet" href="/estilosdelinx.css">
   <link rel="shortcut icon" href="/img/l-removebg-preview.png" type="image/x-icon">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
@@ -47,52 +48,7 @@
         nav a:hover {
             background-color: #555;
         }
-        .hero {
-            background: url('/img/BANNER.jpeg') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: rgb(75, 75, 200);
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3rem;
-        }
-        .content {
-            padding: 2rem;
-        }
-        .section-title {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .gallery, .testimonials, .videos {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-        }
-        .gallery img, .testimonials img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 8px;
-        }
-        .testimonials .testimonial {
-            max-width: 300px;
-            text-align: center;
-        }
-        .testimonial p {
-            font-style: italic;
-        }
-        .testimonial h3 {
-            margin-top: 0.5rem;
-        }
-        .videos iframe {
-            width: 100%;
-            max-width: 560px;
-            height: 315px;
-            border-radius: 8px;
-        }
+       
         footer {
             background-color: #333;
             color: #fff;
@@ -151,83 +107,111 @@
        </a>
    </div>
   </nav>
-  <div class="hero">
-   <h1>
-    Descubre tu Creatividad
-   </h1>
-  </div>
-  <div class="content" id="about">
-   <h2 class="section-title">
-    Sobre Nosotros
-   </h2>
-   <p>
-    Bienvenido a la Escuela E.P.E.S N°101, una institución educativa especializada en el arte y el desarrollo de habilidades creativas. Nuestra escuela se enorgullece de ser un espacio donde la creatividad y el aprendizaje se unen para inspirar y formar a los artistas del mañana.
-   </p>
-  </div>
-  <div class="content" id="gallery">
-   <h2 class="section-title">
-    Galería
-   </h2>
-   <div class="gallery">
-    <img alt="Pintura abstracta colorida en lienzo" height="400" src="/img/LABIOSYOJO.jpg" width="200"/>
-    <img alt="Escultura de mármol detallada" height="400" src="/img/ESCULTURA.jpeg" width="200"/>
-    <img alt="Estudiante dibujando en un cuaderno de bocetos" height="400" src="/img/CUADRO DE GATO.jpeg" width="200"/>
-    <img alt="Clase de arte con estudiantes pintando" height="400" src="/img/CUADRA DE HADES.jpeg" width="200"/>
-    <img alt="Exposición de arte con varias pinturas en la pared" height="200" src="/img/FRUTAS.jpeg" width="300"/>
+ 
+
+
+
+
+   <!-- Banner Parallax -->
+   <div class="parallax" id="parallaxBanner"></div>
+
+   <!-- Texto con Título -->
+   <section class="intro">
+       <h1>Bienvenidos a Nuestra Página</h1>
+       <p>Descubre nuestros servicios y lo que tenemos para ofrecerte.</p>
+   </section>
+
+   <!-- Galería de Imágenes con efecto Lightbox -->
+   <section class="gallery">
+       <h2>Galería de Imágenes</h2>
+       <div class="gallery-grid">
+           <a href="/img/cuadros.jpeg" class="lightbox">
+               <img src="/img/cuadros.jpeg" alt="Imagen 1">
+           </a>
+           <a href="/img/FRUTAS.jpeg" class="lightbox">
+               <img src="/img/FRUTAS.jpeg" alt="Imagen 2">
+           </a>
+           <a href="/img/cosas.jpeg" class="lightbox">
+               <img src="/img/cosas.jpeg" alt="Imagen 3">
+           </a>
+           <a href="/img/CHICOS.jpeg" class="lightbox">
+               <img src="/img/CHICOS.jpeg" alt="Imagen 4">
+           </a>
+       </div>
+   </section>
+
+   <!-- Videos (sin autoplay) -->
+   <section class="videos">
+       <h2>Videos</h2>
+       <div class="video-container">
+           <video width="320" height="240" controls>
+               <source src="/videos/EPES 101 INTRO 720 (1).mp4" type="video/mp4">
+               Tu navegador no soporta la reproducción de video.
+           </video>
+           <video width="320" height="240" controls>
+               <source src="#" type="video/mp4">
+               Tu navegador no soporta la reproducción de video.
+           </video>
+       </div>
+   </section>
+
+
    
-   </div>
-  </div>
-  <div class="content" id="videos">
-   <h2 class="section-title">
-    Videos
-   </h2>
-   <div class="videos">
 
-    <iframe allow="accelerometer; autoplay ; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="/videos/EPES 101 INTRO 720 (1).mp4" title="Video de introducción a la Escuela de Arte">
+   <!-- Testimonios -->
+   <section class="testimonials">
+       <h2>Testimonios</h2>
+       <div class="testimonial">
+           <img src="https://via.placeholder.com/100" alt="Testimonio 1">
+           <p>"Excelente servicio, muy recomendado!" - Cliente 1</p>
+       </div>
+       <div class="testimonial">
+           <img src="https://via.placeholder.com/100" alt="Testimonio 2">
+           <p>"La experiencia fue increíble, volvería sin duda." - Cliente 2</p>
+       </div>
+       <div class="testimonial">
+           <img src="https://via.placeholder.com/100" alt="Testimonio 3">
+           <p>"Muy profesionales, estoy satisfecho con el resultado." - Cliente 3</p>
+       </div>
+   </section>
 
-    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="/videos/EPES 101 INTRO 720 (1).mp4" title="Video de introducción a la Escuela de Arte">
+   <!-- Lightbox Script -->
+   <script>
+       document.querySelectorAll('.lightbox').forEach(item => {
+           item.addEventListener('click', event => {
+               event.preventDefault();
+               const lightboxImage = document.createElement('img');
+               lightboxImage.src = event.currentTarget.href;
+               const overlay = document.createElement('div');
+               overlay.classList.add('overlay');
+               overlay.appendChild(lightboxImage);
+               overlay.addEventListener('click', () => document.body.removeChild(overlay));
+               document.body.appendChild(overlay);
+           });
+       });
 
-    </iframe>
-    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/VIDEO_ID_2" title="Video de una clase de pintura en la Escuela de Arte">
-    </iframe>
-    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/VIDEO_ID_3" title="Video de una exposición de arte organizada por la Escuela de Arte">
-    </iframe>
-   </div>
-  </div>
-  <div class="content" id="testimonials">
-   <h2 class="section-title">
-    Testimonios
-   </h2>
-   <div class="testimonials">
-    <div class="testimonial">
-     <img alt="" height="100" src="" width="100"/>
-     <p>
-      "La Escuela de Arte ha sido una experiencia transformadora para mí. He aprendido tanto y he conocido a personas increíbles."
-     </p>
-     <h3>
-      - María López
-     </h3>
-    </div>
-    <div class="testimonial">
-     <img alt="" height="100" src="" width="100"/>
-     <p>
-      "Los instructores son muy profesionales y apasionados. Recomiendo esta escuela a cualquiera que quiera mejorar sus habilidades artísticas."
-     </p>
-     <h3>
-      - Juan Pérez
-     </h3>
-    </div>
-    <div class="testimonial">
-     <img alt="" height="100" src="" width="100"/>
-     <p>
-      "Me encanta la comunidad aquí. Siempre hay algo nuevo que aprender y todos son muy acogedores."
-     </p>
-     <h3>
-      - Ana García
-     </h3>
-    </div>
-   </div>
-  </div>
+       // Cambiar imágenes en el banner parallax
+       const images = [
+           '/img/banner2.jpg',
+           '/img/BANNER.jpeg',
+           '/videos/EPES 101 INTRO 720 (1).mp4'
+       ];
+       let currentImageIndex = 0;
+       const banner = document.getElementById('parallaxBanner');
+
+       function changeBannerImage() {
+           currentImageIndex = (currentImageIndex + 1) % images.length;
+           banner.style.backgroundImage = `url(${images[currentImageIndex]})`;
+       }
+
+       setInterval(changeBannerImage, 5000); // Cambia cada 5 segundos
+   </script>
+
+
+
+
+
+
   <footer id="contact">
    <p>
     Contacto del creador: bogadolautaro31@gmail.com 

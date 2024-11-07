@@ -1,0 +1,111 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Parallax Banner */
+.parallax {
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 1s ease-in-out; /* Transición suave al cambiar de imagen */
+}
+
+/* Introducción */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+.intro h1 {
+    margin-bottom: 20px;
+}
+.intro p {
+    font-size: 1.2em;
+}
+
+/* Galería de Imágenes */
+.gallery {
+    text-align: center;
+    padding: 50px 20px;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Lightbox Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.overlay img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Videos */
+.videos {
+    text-align: center;
+    padding: 50px 20px;
+}
+.video-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.video-container video {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Testimonios */
+.testimonials {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+.testimonial {
+    margin-bottom: 20px;
+}
+.testimonial img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .video-container {
+        flex-direction: column;
+    }
+}
